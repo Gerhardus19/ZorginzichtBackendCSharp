@@ -4,10 +4,12 @@
     {
         public int ID { get; set; }
 
-        public int CustomerNumber { get; set; }
+        public int PolicyNr { get; set; }
 
-        public int PolicyID { get; set; }
+        public string PolicyName { get; set; } = "";
 
-        public string Name { get; set; } = "";
+        public string Insurance { get; set; } = "";
+
+        public float Costs { get; set; }
     }
 }
