@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ZorginzichtBackend.DAL;
 
@@ -10,9 +11,11 @@ using ZorginzichtBackend.DAL;
 namespace ZorginzichtBackend.Migrations
 {
     [DbContext(typeof(ZorginzichtContext))]
-    partial class ZorginzichtContextModelSnapshot : ModelSnapshot
+    [Migration("20221205152756_Policies")]
+    partial class Policies
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
